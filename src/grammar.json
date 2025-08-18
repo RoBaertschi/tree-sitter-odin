@@ -590,19 +590,19 @@
         },
         {
           "type": "STRING",
-          "value": "\"stdcall\""
-        },
-        {
-          "type": "STRING",
-          "value": "\"std\""
-        },
-        {
-          "type": "STRING",
           "value": "\"cdecl\""
         },
         {
           "type": "STRING",
           "value": "\"c\""
+        },
+        {
+          "type": "STRING",
+          "value": "\"stdcall\""
+        },
+        {
+          "type": "STRING",
+          "value": "\"std\""
         },
         {
           "type": "STRING",
@@ -615,6 +615,18 @@
         {
           "type": "STRING",
           "value": "\"none\""
+        },
+        {
+          "type": "STRING",
+          "value": "\"naked\""
+        },
+        {
+          "type": "STRING",
+          "value": "\"win64\""
+        },
+        {
+          "type": "STRING",
+          "value": "\"sysv\""
         },
         {
           "type": "STRING",
@@ -643,7 +655,23 @@
         },
         {
           "type": "STRING",
-          "value": "::"
+          "value": ":"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "type"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": ":"
         },
         {
           "type": "STRING",
@@ -7794,5 +7822,6 @@
     "expression",
     "literal",
     "statement"
-  ]
+  ],
+  "reserved": {}
 }

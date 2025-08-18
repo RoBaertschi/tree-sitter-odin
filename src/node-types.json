@@ -1834,6 +1834,10 @@
         {
           "type": "expression",
           "named": true
+        },
+        {
+          "type": "type",
+          "named": true
         }
       ]
     }
@@ -2963,6 +2967,10 @@
     "named": false
   },
   {
+    "type": "\"naked\"",
+    "named": false
+  },
+  {
     "type": "\"none\"",
     "named": false
   },
@@ -2980,6 +2988,14 @@
   },
   {
     "type": "\"system\"",
+    "named": false
+  },
+  {
+    "type": "\"sysv\"",
+    "named": false
+  },
+  {
+    "type": "\"win64\"",
     "named": false
   },
   {
@@ -3196,7 +3212,8 @@
   },
   {
     "type": "block_comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "break",
@@ -3212,7 +3229,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "continue",

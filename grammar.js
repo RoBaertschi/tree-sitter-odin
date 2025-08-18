@@ -146,20 +146,28 @@ module.exports = grammar({
     calling_convention: _ => choice(
       '"odin"',
       '"contextless"',
-      '"stdcall"',
-      '"std"',
       '"cdecl"',
       '"c"',
+      '"stdcall"',
+      '"std"',
       '"fastcall"',
       '"fast"',
+
       '"none"',
+      '"naked"',
+
+      '"win64"',
+      '"sysv"',
+
       '"system"',
     ),
 
     overloaded_procedure_declaration: $ => seq(
       optional($.attributes),
       $.expression,
-      '::',
+      ':',
+      optional($.type),
+      ':',
       'proc',
       '{',
       optional(seq(

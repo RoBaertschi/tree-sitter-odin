@@ -276,6 +276,10 @@
         "named": true
       },
       {
+        "type": "empty_struct_literal",
+        "named": true
+      },
+      {
         "type": "float",
         "named": true
       },
@@ -1285,6 +1289,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "empty_struct_literal",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "empty_type",

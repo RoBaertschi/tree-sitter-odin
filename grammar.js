@@ -122,7 +122,9 @@ module.exports = grammar({
     procedure_declaration: $ => seq(
       optional($.attributes),
       $.expression,
-      '::',
+      ':',
+      optional($.type),
+      ':',
       optional($.tag),
       $.procedure,
     ),

@@ -2054,6 +2054,10 @@
         {
           "type": "procedure",
           "named": true
+        },
+        {
+          "type": "type",
+          "named": true
         }
       ]
     }
